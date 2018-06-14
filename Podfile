@@ -13,9 +13,6 @@ target 'chef chef' do
     pod 'Toucan'
     pod 'Alamofire'
     pod 'AlamofireImage'
-    pod 'TextFieldEffects'
-    pod 'SwiftyButton'
-    
     
     
     
