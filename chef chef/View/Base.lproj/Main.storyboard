@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -275,23 +276,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="l3T-sK-iRw">
-                                <rect key="frame" x="36" y="293" width="300" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcU-NP-hFh">
+                                <rect key="frame" x="38" y="440" width="299" height="30"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcU-NP-hFh">
-                                <rect key="frame" x="36" y="359" width="300" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T21-Xr-FAr" customClass="CustomButton" customModule="chef_chef" customModuleProvider="target">
-                                <rect key="frame" x="36" y="424" width="300" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T21-Xr-FAr" customClass="CustomButton" customModule="chef_chef" customModuleProvider="target">
+                                <rect key="frame" x="38" y="520" width="299" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
                                 <state key="normal" title="Log in">
@@ -301,9 +293,8 @@
                                     <action selector="loginButtonPressed:" destination="ga2-aM-u7h" eventType="touchUpInside" id="7bp-oG-FI4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qec-ja-8XZ" customClass="CustomButton" customModule="chef_chef" customModuleProvider="target">
-                                <rect key="frame" x="36" y="492" width="300" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qec-ja-8XZ" customClass="CustomButton" customModule="chef_chef" customModuleProvider="target">
+                                <rect key="frame" x="38" y="605" width="299" height="35"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
                                 <state key="normal" title="Sign up">
@@ -314,8 +305,37 @@
                                     <segue destination="tmh-h2-2Mj" kind="presentation" identifier="loginToSignup" id="rWr-rF-8bq"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_shaded" translatesAutoresizingMaskIntoConstraints="NO" id="dCk-bK-pr1">
+                                <rect key="frame" x="13" y="144" width="349" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dCk-bK-pr1" secondAttribute="height" multiplier="349:116" id="moe-3n-Yro"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="l3T-sK-iRw">
+                                <rect key="frame" x="38" y="360" width="299" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wkn-qL-ltO" firstAttribute="trailing" secondItem="dcU-NP-hFh" secondAttribute="trailing" constant="38" id="30k-Nv-baY"/>
+                            <constraint firstItem="l3T-sK-iRw" firstAttribute="leading" secondItem="wkn-qL-ltO" secondAttribute="leading" constant="38" id="Crr-2Y-zaY"/>
+                            <constraint firstItem="wkn-qL-ltO" firstAttribute="trailing" secondItem="T21-Xr-FAr" secondAttribute="trailing" constant="38" id="DiZ-Jj-cjD"/>
+                            <constraint firstItem="T21-Xr-FAr" firstAttribute="leading" secondItem="wkn-qL-ltO" secondAttribute="leading" constant="38" id="JEK-ma-ale"/>
+                            <constraint firstItem="dcU-NP-hFh" firstAttribute="top" secondItem="l3T-sK-iRw" secondAttribute="bottom" constant="50" id="Mgf-v9-DfM"/>
+                            <constraint firstItem="dcU-NP-hFh" firstAttribute="leading" secondItem="wkn-qL-ltO" secondAttribute="leading" constant="38" id="NOO-gJ-JX4"/>
+                            <constraint firstItem="wkn-qL-ltO" firstAttribute="trailing" secondItem="l3T-sK-iRw" secondAttribute="trailing" constant="38" id="Q1E-nM-2oX"/>
+                            <constraint firstItem="qec-ja-8XZ" firstAttribute="leading" secondItem="wkn-qL-ltO" secondAttribute="leading" constant="38" id="Q7b-8b-MAm"/>
+                            <constraint firstItem="qec-ja-8XZ" firstAttribute="top" secondItem="T21-Xr-FAr" secondAttribute="bottom" constant="50" id="TrC-N3-W1f"/>
+                            <constraint firstItem="l3T-sK-iRw" firstAttribute="top" secondItem="dCk-bK-pr1" secondAttribute="bottom" constant="100" id="U2w-ha-7i3"/>
+                            <constraint firstItem="dCk-bK-pr1" firstAttribute="top" secondItem="wkn-qL-ltO" secondAttribute="top" constant="100" id="WhX-il-oYf"/>
+                            <constraint firstItem="dCk-bK-pr1" firstAttribute="leading" secondItem="wkn-qL-ltO" secondAttribute="leading" constant="13" id="YUu-Dg-ZT7"/>
+                            <constraint firstItem="wkn-qL-ltO" firstAttribute="trailing" secondItem="dCk-bK-pr1" secondAttribute="trailing" constant="13" id="eqM-gb-DgE"/>
+                            <constraint firstItem="wkn-qL-ltO" firstAttribute="trailing" secondItem="qec-ja-8XZ" secondAttribute="trailing" constant="38" id="gUx-SZ-zY3"/>
+                            <constraint firstItem="T21-Xr-FAr" firstAttribute="top" secondItem="dcU-NP-hFh" secondAttribute="bottom" constant="50" id="jRf-nM-Io9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wkn-qL-ltO"/>
                     </view>
                     <connections>
@@ -329,10 +349,10 @@
             </objects>
             <point key="canvasLocation" x="-2407.1999999999998" y="120.44334975369459"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Controller-->
         <scene sceneID="J3U-gb-ky7">
             <objects>
-                <viewController id="tmh-h2-2Mj" sceneMemberID="viewController">
+                <viewController id="tmh-h2-2Mj" customClass="RegisterController" customModule="chef_chef" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4I-1a-gVc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -368,9 +388,12 @@
                                 <rect key="frame" x="38" y="494" width="299" height="36"/>
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
-                                <state key="normal" title="Create Account">
+                                <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="tmh-h2-2Mj" eventType="touchUpInside" id="zRt-JB-1P7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTm-89-g87" customClass="CustomButton" customModule="chef_chef" customModuleProvider="target">
                                 <rect key="frame" x="38" y="570" width="299" height="36"/>
@@ -420,6 +443,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HAw-kc-WMo"/>
                     </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="dBP-U6-4XN" id="BFQ-dF-iVt"/>
+                        <outlet property="confirmPasswordTextField" destination="p7P-u1-27C" id="B8Y-Za-9AK"/>
+                        <outlet property="emailTextField" destination="4HJ-uy-SCR" id="QVG-cr-Srx"/>
+                        <outlet property="usernameTextField" destination="Bv9-9f-hgL" id="2ub-41-5F8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzr-W5-cNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -487,5 +516,6 @@
     <resources>
         <image name="bg_login" width="250" height="500"/>
         <image name="cutting_board" width="646" height="872"/>
+        <image name="logo_shaded" width="349" height="116"/>
     </resources>
 </document>
