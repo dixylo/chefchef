@@ -22,6 +22,7 @@ class PostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         txtTitle.text = post.title
+        txtContent.text = post.content
         
         //load the image
         let url = post.image

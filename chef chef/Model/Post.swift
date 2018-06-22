@@ -14,4 +14,5 @@ class Post {
     var desciption : String = ""
     var author : String = ""
     var image: String = ""
+    var content: String = ""
 }

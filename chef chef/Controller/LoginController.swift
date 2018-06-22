@@ -10,16 +10,24 @@ import UIKit
 
 import Firebase
 
+
 class LoginController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBOutlet weak var loginButton: CustomButton!
+    
+    @IBOutlet weak var loginbutton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
+        
+        
 
         
         // Do any additional setup after loading the view.
@@ -42,8 +50,7 @@ class LoginController: UIViewController {
         }
     }
     
-    @IBAction func signupButtonPressed(_ sender: Any) {
-    }
+    
     /*
     // MARK: - Navigation
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		046A40AE20D116BD00CF597E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A40AD20D116BD00CF597E /* CustomButton.swift */; };
+		044D265C20D381750067F544 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D265B20D381750067F544 /* CustomButton.swift */; };
 		27E5C94A8914857413841ABA /* Pods_chef_chef.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A26190ABCC2BC87D3CF5B52 /* Pods_chef_chef.framework */; };
 		AB61694320CF8713007B33AA /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB61694220CF8713007B33AA /* PostViewController.swift */; };
 		AB66922C20AA7AEF00A066A6 /* createViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66922B20AA7AEF00A066A6 /* createViewController.swift */; };
@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		046A40AD20D116BD00CF597E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		044D265B20D381750067F544 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0FD3282F094F10470D979D3F /* Pods-chef chef.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chef chef.release.xcconfig"; path = "Pods/Target Support Files/Pods-chef chef/Pods-chef chef.release.xcconfig"; sourceTree = "<group>"; };
 		4A26190ABCC2BC87D3CF5B52 /* Pods_chef_chef.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chef_chef.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2D7D83EE78F878CA55A715 /* Pods-chef chef.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chef chef.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chef chef/Pods-chef chef.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				ABCB13F020AA789D008ED8AF /* Post.swift */,
-				046A40AD20D116BD00CF597E /* CustomButton.swift */,
+				044D265B20D381750067F544 /* CustomButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046A40AE20D116BD00CF597E /* CustomButton.swift in Sources */,
+				044D265C20D381750067F544 /* CustomButton.swift in Sources */,
 				AB61694320CF8713007B33AA /* PostViewController.swift in Sources */,
 				ABCB13EE20AA7101008ED8AF /* CustomPostCell.swift in Sources */,
 				AB76F98C209D1E6500C48E3E /* MainViewController.swift in Sources */,

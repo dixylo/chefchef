@@ -30,6 +30,9 @@ class createViewController: UIViewController, UIImagePickerControllerDelegate,UI
     @IBOutlet var sendButton: UIButton!
     
     
+    @IBOutlet weak var contentTextView: UITextView!
+    
+    
     @IBOutlet weak var progressView: UIProgressView!
     
     var imageData: NSData = NSData()
@@ -79,6 +82,7 @@ class createViewController: UIViewController, UIImagePickerControllerDelegate,UI
                               "Title":titleTextField.text!,
                               "Description":descriptionTextField.text!,
                               "Author":authorTextField.text!,
+                              "Content": contentTextView.text!,
                               "Image":imagePostUrl]
         
         
@@ -97,6 +101,7 @@ class createViewController: UIViewController, UIImagePickerControllerDelegate,UI
                 self.titleTextField.text = ""
                 self.descriptionTextField.text = ""
                 self.authorTextField.text = ""
+                self.contentTextView.text = ""
                 
                 
             }

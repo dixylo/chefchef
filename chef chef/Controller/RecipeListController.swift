@@ -95,6 +95,7 @@ class RecipeListController: UIViewController, UITableViewDelegate, UITableViewDa
 
     //MARK: - retrieve data from firebase
     func retrievePosts() {
+        guard (Auth.auth().currentUser?.uid) != nil else { return }
         let postDB = Database.database().reference().child("Messages")
         
         postDB.observe(.childAdded) { (snapshot) in
@@ -106,6 +107,7 @@ class RecipeListController: UIViewController, UITableViewDelegate, UITableViewDa
             post.desciption = snapshotValue["Description"]!
             post.author = snapshotValue["Author"]!
             post.image = snapshotValue["Image"]!
+            post.content = snapshotValue["Content"]!
             
             self.postsArray.append(post)
             self.configureTableView()
